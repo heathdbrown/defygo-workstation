@@ -1,6 +1,9 @@
 #!/bin/sh
 sudo apt-get -y update 
 sudo apt-get -y install chromium-browser build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev meld
+wget --no-check-certificate https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
+mv git-completion.bash .git-completion.sh
+echo "source ~/.git-completion.sh" >> ~/.bashrc
 bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
 echo "[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session." >> ~/.bashrc
 source ~/.bashrc
