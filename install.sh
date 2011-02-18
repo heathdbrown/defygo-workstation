@@ -1,5 +1,4 @@
 #!/bin/bash
-# Update OS
 sudo apt-get -y update 
 # Base packages for rvm, pgsql, git, and rails.
 sudo apt-get -y install chromium-browser build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev meld
@@ -30,3 +29,7 @@ git clone git://github.com/gmate/gmate.git
 cd gmate
 sudo ./install.sh
 cd ..
+git clone git://github.com/mig/gedit-themes.git
+mkdir ~/.gnome2/gedit/styles
+cp gedit-themes/*.xml ~/.gnome2/gedit/styles
+
