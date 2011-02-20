@@ -28,6 +28,7 @@ git config --global core.editor gedit
 git clone git://github.com/gmate/gmate.git
 cd gmate
 sudo ./install.sh
+sudo chown -R $USER:$USER ~/.gnome2/gedit
 cd ..
 git clone git://github.com/mig/gedit-themes.git
 mkdir ~/.gnome2/gedit/styles
