@@ -106,5 +106,5 @@ fi
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]$ '
 source ~/.git-completion.sh
 
-[[ -s "/home/andyhky/.rvm/scripts/rvm" ]] && . /home/andyhky/.rvm/scripts/rvm  # This loads RVM into a shell session.
+[[ -s "~/.rvm/scripts/rvm" ]] && . ~/.rvm/scripts/rvm  # This loads RVM into a shell session.
 
