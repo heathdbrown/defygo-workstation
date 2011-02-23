@@ -7,6 +7,7 @@ wget --no-check-certificate https://github.com/git/git/raw/master/contrib/comple
 mv git-completion.bash .git-completion.sh
 # RVM
 bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+rm ~/.bashrc
 wget --no-check-certificate https://github.com/andyhky/defygo-workstation/raw/master/.bashrc
 source ~/.bashrc
 rvm get head
