@@ -33,4 +33,3 @@ cd ..
 git clone git://github.com/mig/gedit-themes.git
 mkdir ~/.gnome2/gedit/styles
 cp gedit-themes/*.xml ~/.gnome2/gedit/styles
-
