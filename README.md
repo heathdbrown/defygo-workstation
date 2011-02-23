@@ -1,6 +1,6 @@
 # defygo-workstation
 
-defygo-workstation is a basic script to get jumpstarted on another project, defygo. It is design to get over the hurdle of setting up a workstation for development. 
+defygo-workstation is a basic script to get jumpstarted on another project, defygo. It is designed to get over the hurdle of setting up a workstation for development. 
 
 ## Installation 
 
