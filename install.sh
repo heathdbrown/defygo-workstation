@@ -9,6 +9,7 @@ mv git-completion.bash .git-completion.sh
 bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
 rm ~/.bashrc
 wget --no-check-certificate https://github.com/andyhky/defygo-workstation/raw/master/.bashrc
+sed -i "s/andyhky/$USER/g" .bashrc
 source ~/.bashrc
 rvm get head
 rvm reload
