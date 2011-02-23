@@ -5,11 +5,9 @@ sudo apt-get -y install chromium-browser build-essential bison openssl libreadli
 # git complete
 wget --no-check-certificate https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
 mv git-completion.bash .git-completion.sh
-echo "PS1='[\u@\h \W\$(__git_ps1 \" (%s)\")]\$ '" >> ~/.bashrc
-echo "source ~/.git-completion.sh" >> ~/.bashrc
 # RVM
 bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
-echo "[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session." >> ~/.bashrc
+wget --no-check-certificate https://github.com/andyhky/defygo-workstation/raw/master/.bashrc
 source ~/.bashrc
 rvm get head
 rvm reload
