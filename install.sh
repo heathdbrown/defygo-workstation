@@ -7,7 +7,9 @@ wget --no-check-certificate https://github.com/git/git/raw/master/contrib/comple
 mv git-completion.bash .git-completion.sh
 # RVM
 bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+rm ~/.bashrc
 wget --no-check-certificate https://github.com/andyhky/defygo-workstation/raw/master/.bashrc
+sed -i "s/andyhky/$USER/g" .bashrc
 source ~/.bashrc
 rvm get head
 rvm reload
@@ -31,4 +33,3 @@ cd ..
 git clone git://github.com/mig/gedit-themes.git
 mkdir ~/.gnome2/gedit/styles
 cp gedit-themes/*.xml ~/.gnome2/gedit/styles
-
