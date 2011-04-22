@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get -y update 
 # Base packages for rvm, pgsql, git, and rails.
-sudo apt-get -y install chromium-browser build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev meld
+sudo apt-get -y install chromium-browser build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev meld libpq-dev
 # git complete
 wget --no-check-certificate https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
 mv git-completion.bash .git-completion.sh
